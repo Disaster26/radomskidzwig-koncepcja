@@ -85,7 +85,7 @@ p{margin:0}
 @media (max-height:760px) and (min-width:900px){.hero h1{font-size:clamp(36px,2.6vw + 12px,62px)}.hero .lead{margin-top:16px}.hero-cta{margin-top:24px}.kolaz{max-width:min(1000px,calc((100svh - var(--hh) - 70px) * 1.2))}}
 @media (max-width:899px){
  .hero-in{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:0;width:100%}
- .kolaz{order:-1;display:flex;flex:1 1 auto;min-height:min(46vw,24svh);max-height:40svh;max-width:none;position:relative}
+ .kolaz{order:-1;display:flex;flex:4 1 auto;min-height:min(46vw,24svh);max-height:50svh;max-width:none;position:relative}
  .kolaz .k2,.kolaz .k3{display:none}
  .kolaz .k1{flex:1 1 auto;aspect-ratio:auto;border-radius:0;width:100%;align-self:stretch}
  .kolaz .k1 img{object-position:30% 40%}
@@ -114,14 +114,14 @@ p{margin:0}
 .dzwig .opis{padding:22px 22px 24px;border-top:6px solid var(--zolty);flex:1;display:flex;flex-direction:column}
 .dzwig h3{margin-bottom:16px}
 .dane{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0}
-.dane div{border-left:2px solid var(--czarny);padding-left:12px}
+.dane div{border-left:2px solid var(--czarny);padding-left:12px;display:flex;flex-direction:column;justify-content:flex-end}
 .dane dt{font-size:14px;color:var(--mut);line-height:1.3}
 .dane dd{margin:4px 0 0;font:800 clamp(28px,1.2vw + 18px,40px)/1 Saira,sans-serif;color:var(--czarny)}
 .dzwig .uw{margin-top:16px;font-size:15px;color:var(--mut)}
 .flota-dol{margin-top:clamp(28px,3vw,44px);display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between;border-top:1px solid var(--linia);padding-top:26px}
 .flota-dol p{max-width:60ch;font-size:clamp(17px,.3vw + 16px,20px)}
 @media (max-width:899px){
- .flota{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-inline:-16px;padding:0 16px 8px;scrollbar-width:none}
+ .flota{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-inline:-16px;padding:0 16px 8px;scroll-padding-inline:16px;scrollbar-width:none}
  .flota::-webkit-scrollbar{display:none}
  .dzwig{flex:0 0 84%;scroll-snap-align:start}
 }
@@ -150,7 +150,7 @@ p{margin:0}
 .tor figure{margin:0;flex:0 0 clamp(280px,36vw,640px);scroll-snap-align:start}
 .tor img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:4px;pointer-events:none}
 .tor figcaption{margin-top:12px;font-weight:600}
-@media (max-width:899px){.strzalki{display:none}.tor{margin-inline:-16px;padding-inline:16px}.tor figure{flex-basis:84%}}
+@media (max-width:899px){.strzalki{display:none}.tor{margin-inline:-16px;padding-inline:16px;scroll-padding-inline:16px}.tor figure{flex-basis:84%}}
 
 /* o firmie */
 .firma{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(32px,5vw,96px);align-items:center}
